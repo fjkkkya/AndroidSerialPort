@@ -20,7 +20,7 @@ public abstract class SerialPortReadThread extends Thread {
 
     public SerialPortReadThread(InputStream inputStream) {
         mInputStream = inputStream;
-        mReadBuffer = new byte[1024];
+        mReadBuffer = new byte[2048];
     }
 
     @Override
